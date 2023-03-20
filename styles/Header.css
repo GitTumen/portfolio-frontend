@@ -12,32 +12,63 @@ img.Logo {
     margin-top: 34px;
     margin-bottom: 34px;
 }
-ul.menu {
-    list-style: none;
-    position: absolute;
-    color:white;
-    top: 23px;
-    bottom: 24px;
-    right: 112px;
-    margin: 0;
-    padding: 20px;
-}
-ul.menu li {
-    display: inline;
+.menu {
+    list-style-type: none;
+    display: flex;
+    margin: 0px;
     padding: 0px;
-}
-.menu a {
-    color: #f2f2f2;
-    text-align: center;
-    padding: 5px 5px;
-    text-decoration: none;
-    font-size: 17px;
-    border-bottom: 3px solid transparent;
-}
-.menu a:hover {
-    border-bottom: 3px solid rgb(255, 255, 255);
+    gap: 8px;
 }
 
-.menu a.active {
-    border-bottom: 3px solid white;
+
+.menu-item {
+color: white;
+font-size: 14px;
+line-height: 150%;
+height: 50px;
+width: 100px;
 }
+
+
+.menu-item:last-child {
+    margin-right: 0;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #010208;
+    height: 96px;
+}
+
+
+.menu-item > a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.menu-item > a:hover {
+    background: linear-gradient(99.05deg, #bc3cd8 0.07%, #c54b8c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.menu-item >a:hover::after {
+    content: "";
+    width: 9px;
+    height: 0px;
+
+    border: 2.5px solid #e3e4e6;
+    border-radius: 2px;
+}
+
