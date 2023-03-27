@@ -1,11 +1,15 @@
 header {
-    width: 100%;
+    position: absolute;
     height: 96px;
-    background: black;
+    left: 0px;
+    right: 0px;
+    top: 0px;
 }
 *{
+    color: white;
     padding: 0;
     margin: 0;
+    font-family: 'Noto Sans', sans-serif;
 }
 img.Logo {
     margin-left: 112px;
@@ -66,3 +70,76 @@ header {
     border-radius: 2px;
 }
 
+.Hero-descrip {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px 104px;
+    gap: 10px;
+    
+    position: absolute;
+    height: 168px;
+    left: 112px;
+    right: 112px;
+    top: 316px;
+    
+}
+.icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: calc(50% - 40px/2);
+    bottom: 642px;
+
+}
+.light{
+    color:gray;
+}
+.semibold{
+    font-weight: 600;
+}
+.content {
+    background: black;
+    color: white;
+    height: 704px;
+    font-size: 70px;
+    text-align: center;
+}
+.secondpage {
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 80px 112px 130px;
+    gap: 8px;
+}
+.clients{
+    width: 1216px;
+    height: 292.5px;
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 80px;
+}
+.clients div:first-child{ 
+    width: 1216px;
+    height: 120px;
+    gap: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+}
+.clients div:nth-child(2){ 
+    width: 1216px;
+    height: 92.5px;
+    padding: 16px 0px;
+    gap: 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -10,35 +10,44 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;600&display=swap" rel="stylesheet">
     <style>
-        .light{
-            font-family: 'Noto Sans', sans-serif;
-            color:gray;
+        .work{
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 80px 110px 120px;
+            gap: 97px;
         }
-        .semibold{
-            font-family: 'Noto Sans',sans-serif;
-            font-weight: 600;
+        .titlework{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 10px;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 40px;
+            line-height: 150%;  
         }
-        .content {
-            background: black;
-            color: white;
-            height: 704px;
-            font-size: 70px;
-            text-align: center;
+        .card{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 32px;
         }
-        .clients{
-            height: 502.5px;
-            background: black;
-            color: white;
-        }
-        .clients div{
-            padding: 80px 112px;
-            font-size: 50px;
-        }
-        .company{
-            gap: 20px;
+        .cardtitle{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 32px;  
+            font-size: 40px;
         }
     </style>
 </head>
+<body>   
     <header >
         <img class="Logo" src="public/Dezign.svg" alt="Логотип">
         <ul class="menu">
@@ -47,23 +56,36 @@
             <li class = "menu-item"><a href="#ABOUT"><span class="semibold">ABOUT</span></a></li>
         </ul>
     </header>
-<body>   
     <div class="content" target="HOME">
-        <br><br><br><br>
-      <p><span class="light">I’m a designer specialising in</span> <span class="semibold">UI/UX</span>  <span class="light">and</span> <span class="semibold">Interaction Design</span></p>
-        <br><br><br>
-    <img src="public/Vector.svg"  alt="Вниз">
-    </div>
-    <section class="clients">
-        <div>
-            <span class="light">Some of </span> <span class="semibold">the clients I have designed for</span>
-            <p class="Company">
-            <img src="public/airbnb.svg" alt="Компании">
-            <img src="public/Google Logogoogle.svg" alt="Компании">
-            <img src="public/Microsoft Logo.png" alt="Компании">
-            <img src="public/FedEx Logo.png" alt="Компании">
-            </p>
+        <div class="Hero-descrip"><span class="light">I’m a designer specialising in</span> <span class="semibold">UI/UX</span>  <span class="light">and</span> <span class="semibold">Interaction Design</span>
         </div>
-    </section>
+        <img class="icon"src="public/Vector.svg" alt="Вниз">
+    </div>
+    <div class="secondpage">
+        <div class="clients">
+            <div>
+                <span class="light">Some of </span> <span class="semibold">the clients I have designed for</span>
+            </div>
+            <div>
+                <img src="public/airbnb.svg" alt="Компании">
+                <img src="public/Google Logogoogle.svg" alt="Компании">
+                <img src="public/Microsoft Logo.png" alt="Компании">
+                <img src="public/FedEx Logo.png" alt="Компании">
+            </div>
+        </div>
+    </div>
+    <div class="work">
+        <div class="titlework">
+            <span class="light">Selected </span><span class="semibold">Works</span>
+        </div>
+        <div class="card">
+                <img class="cardpicture" src="public/images/Change this1.png" alt="CardPicture">
+            <div class="cardtitle">
+                <p class="semibold">REAL ESTATE TEMPLATE</p>
+                <p><span class="light">Lorem ipsum dolor sit amet, consectetur</span><span class="semibold"> adipiscing elit. Ultrices lorem non feugiat egestas amet.</span></p>
+                <p class="light">Website Design</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
