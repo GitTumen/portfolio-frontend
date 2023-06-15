@@ -1,91 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link href="styles/main.css" rel="stylesheet" type="text/css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;600&display=swap" rel="stylesheet">
-    <style>
-        .work{
-            background-color: black;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            padding: 80px 110px 120px;
-            gap: 97px;
-        }
-        .titlework{
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            padding: 0px;
-            gap: 10px;
-            font-style: normal;
-            font-weight: 300;
-            font-size: 40px;
-            line-height: 150%;  
-        }
-        .card{
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            padding: 0px;
-            gap: 32px;
-        }
-        .cardtitle{
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            align-items: flex-start;
-            padding: 0px;
-            gap: 32px;  
-            font-size: 40px;
-        }
-    </style>
+<link href="./styles/main.css" rel="stylesheet" type="text/css">
 </head>
-<body>   
-    <header >
-        <img class="Logo" src="public/Dezign.svg" alt="Логотип">
-        <ul class="menu">
-            <li class = "menu-item"><a href="#HOME"><span class="semibold">HOME</span></a></li>
-            <li class = "menu-item"><a href="#WORK"><span class="semibold">WORK</span></a></li>
-            <li class = "menu-item"><a href="#ABOUT"><span class="semibold">ABOUT</span></a></li>
-        </ul>
-    </header>
-    <div class="content" target="HOME">
-        <div class="Hero-descrip"><span class="light">I’m a designer specialising in</span> <span class="semibold">UI/UX</span>  <span class="light">and</span> <span class="semibold">Interaction Design</span>
-        </div>
-        <img class="icon"src="public/Vector.svg" alt="Вниз">
+<body>
+  <header>
+    <img src="./public/Dezign.svg" alt="Логотип">
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Work</a>
+      <a href="#">About</a>
+    </nav>
+  </header>
+
+  <div class="banner">
+    <h2>I’m a designer specialising in <span style="color: #fff;">UI/UX</span> and <span style="color: #fff;">Interaction Design</span>.</h2>
+    <div class="arrow"><img src="./public/chevron-down.png" alt=""></div>
+  </div>
+
+  <div class="clients">
+    <h3>Some of <span style="color: #fff;">the clients I have<br>designed for.</span></h3>
+    <div class="images">
+      <img src="./public/airbnb.svg" alt="Client 1">
+      <img src="./public/Google Logogoogle.svg" alt="Client 2">
+      <img src="./public/Microsoft Logo.png" alt="Client 3">
+      <img src="./public/FedEx Logo.png" alt="Client 4">
     </div>
-    <div class="secondpage">
-        <div class="clients">
-            <div>
-                <span class="light">Some of </span> <span class="semibold">the clients I have designed for</span>
-            </div>
-            <div>
-                <img src="public/airbnb.svg" alt="Компании">
-                <img src="public/Google Logogoogle.svg" alt="Компании">
-                <img src="public/Microsoft Logo.png" alt="Компании">
-                <img src="public/FedEx Logo.png" alt="Компании">
-            </div>
-        </div>
+  </div>
+  
+  <div class="selected-works">
+    <div class="text">
+      <h3><span class="gray">Selected</span> Works</h3>
     </div>
-    <div class="work">
-        <div class="titlework">
-            <span class="light">Selected </span><span class="semibold">Works</span>
+    <div class="content">
+      <div class="info">
+        <p class="title">Text on the Right, Image on the Left</p>
+        <p class="description">
+          <span class="gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+          Ultrices lorem non feugiat egestas amet.
+        </p>
+        <p class="subtitle">Web Design</p>
+        <div class="button">
+          <a href="#">VIEW WORK <img src="./public/icon.png" alt="Arrow"></a>
         </div>
-        <div class="card">
-                <img class="cardpicture" src="public/images/Change this1.png" alt="CardPicture">
-            <div class="cardtitle">
-                <p class="semibold">REAL ESTATE TEMPLATE</p>
-                <p><span class="light">Lorem ipsum dolor sit amet, consectetur</span><span class="semibold"> adipiscing elit. Ultrices lorem non feugiat egestas amet.</span></p>
-                <p class="light">Website Design</p>
-            </div>
-        </div>
+      </div>
+      <img src="./public/Change this.png" alt="Selected Works" class="image">
     </div>
-</body>
-</html>
+    <div class="content">
+      <img src="./public/Change this1.png" alt="Selected Works" class="image">
+      <div class="info">
+        <p class="title">Text on the Left, Image on the Right</p>
+        <p class="description">
+          <span class="gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+          Ultrices lorem non feugiat egestas amet.
+        </p>
+        <p class="subtitle">Graphic Design</p>
+        <div class="button">
+          <a href="#">VIEW WORK <img src="./public/icon.png" alt="Arrow"></a>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="info">
+        <p class="title">Text on the Right, Image on the Left</p>
+        <p class="description">
+          <span class="gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+          Ultrices lorem non feugiat egestas amet.
+        </p>
+        <p class="subtitle">UI Design</p>
+        <div class="button">
+          <a href="#">VIEW WORK <img src="./public/icon.png" alt="Arrow"></a>
+        </div>
+      </div>
+      <img src="./public/Change this2.png" alt="Selected Works" class="image">
+    </div>
+    <div class="content">
+      <img src="./public/Change this3.png" alt="Selected Works" class="image">
+      <div class="info">
+        <p class="title">Text on the Left, Image on the Right</p>
+        <p class="description">
+          <span class="gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+          Ultrices lorem non feugiat egestas amet.
+        </p>
+        <p class="subtitle">UX Design</p>
+        <div class="button">
+          <a href="#">VIEW WORK <img src="./public/icon.png" alt="Arrow"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="grid-block">
+    <div class="block-content">
+      <div class="text">
+        <h3 class="title">A bit about me
+        <p class="description">
+          <span class="gray">I am a UI/UX designer who is passionate about creating </span> beautiful and joyful digital experiences.
+          Besides design, I love music, games and travelling.</h3> 
+        </p>
+      </div>
+      <div class="image_three">
+        <img src="./public/Change this4.png" alt="Image">
+        <img src="./public/Change this5.png" alt="Image 2" >
+        <img src="./public/Change this6.png" alt="Image 3">
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <div class="footer-content">
+      <div class="text">
+        <h3>Get in Touch.</h3>
+        <p class="subtitle">So that we can talk more about...</p>
+      </div>
+      <div class="images_footer">
+        <img src="./public/mail.png" alt="Image 1">
+        <img src="./public/Behance.png" alt="Image 2">
+        <img src="./public/Dribble.png" alt="Image 3">
+        <img src="./public/LinkedIn.png" alt="Image 4">
+      </div>
+      <p class="made-by">Made with ❣️ by Srinivas Dezign</p>
+    </div>
+  </footer>
