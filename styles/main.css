@@ -1,7 +1,8 @@
 body {
     background-color: #010208;
 }
-/* CSS стили для шапки */
+
+
 header {
   width: 1440px;
   height: 96px;
@@ -23,7 +24,7 @@ nav {
 
 nav a {
   margin-right: 20px;
-  color: #8d8e90;
+  color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
   position: relative;
@@ -69,7 +70,7 @@ nav a:hover::after {
 .banner h2 {
   color: #8d8e90;
   font-size: 56px;
-  max-width: calc(100% - 264px - 168px);
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   margin-left: 264px;
   margin-right: 168px;
 }
@@ -105,13 +106,47 @@ nav a:hover::after {
   justify-content: flex-start; 
   align-items: center;
   margin-top: 80px;
-  width: 1216px;
+  width: 1600px;
 }
-
-.clients .images img {
+ a.image-one {
+  width: 200px;
+  height: 60px;
+  margin-right: 130px; 
+  background: url("../public/png/Airbnb.png") no-repeat ; 
+}
+ a.image-one:hover {
+  background: url("../public/png/AirColored.png") no-repeat;
+}
+ a.image-two {
+  width: 200px;
   height: 60px;
   margin-right: 134px; 
+  background: url("../public/png/Google.png")no-repeat; 
 }
+ a.image-two:hover {
+  background: url("../public/png/GoogleColored.png") no-repeat;
+}
+ a.image-three {
+  width: 265px;
+  height: 60px;
+  margin-bottom: 20px; 
+  margin-right: 134px; 
+  background: url("../public/png/Microsoft.png")no-repeat; 
+}
+ a.image-three:hover {
+  background: url("../public/png/MicrosoftColored.png")no-repeat;
+}
+a.image-four {
+  width: 200px;
+  height: 60px;
+  margin-bottom: 20px;
+  margin-right: 134px; 
+  background: url("../public/png/FedEx.png") no-repeat; 
+}
+ a.image-four:hover {
+  background: url("../public/png/FedExColored.png") no-repeat;
+}
+
 
 /* CSS стили для нового блока */
 
@@ -205,9 +240,11 @@ height: 16px;
 margin-left: 8px;
 }
 
+
 .button:hover {
 background-color: #800080;
 }
+
 
 /*About me homie*/
 
@@ -310,8 +347,11 @@ margin-bottom: 80px;
 width: 48px;
 height: 48px;
 margin: 0 56px;
+opacity: 0.50;
 }
-
+.images_footer img:hover{
+opacity: 1;
+  }
 .made-by {
 font-size: 16px;
 }
